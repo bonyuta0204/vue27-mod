@@ -1,0 +1,7 @@
+{
+  "name": "vue27-mod",
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
