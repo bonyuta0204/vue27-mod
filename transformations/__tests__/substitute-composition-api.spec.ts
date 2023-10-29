@@ -1,5 +1,5 @@
 import { defineInlineTest } from 'jscodeshift/src/testUtils'
-import transform from '../substite-composition-api'
+import transform from '../substitute-composition-api'
 
 defineInlineTest(
   transform,
