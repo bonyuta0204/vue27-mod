@@ -1,4 +1,6 @@
 import jscodeshift, { Transform } from 'jscodeshift'
+// @ts-ignore
+import getParser from 'jscodeshift/src/getParser'
 
 type FileInfo = {
   path: string
@@ -12,7 +14,8 @@ export default function runTransformation(
 ) {
   const { source } = fileInfo
 
-  const j = jscodeshift
+  const parser = getParser("ts")
+  const j = jscodeshift.withParser(parser)
   const api = {
     j,
     jscodeshift: j,
